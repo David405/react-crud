@@ -1,7 +1,15 @@
+import React from "react";
+import {useState} from "react";
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [todos, setTodos] = useState([
+    { text: "Learn about React" },
+    { text: "Meet friend for lunch" },
+    { text: "Build really cool todo app" }
+  ]);
+
   return (
     <div className="App">
       <header className="App-header">
